@@ -58,10 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 	-moz-border-radius-topright: 8px;
 	-webkit-border-top-right-radius: 8px;
 	border-top-right-radius: 8px;
+  margin-right: 5px;
 }
 
 
-#page_content ul#navbar li.selected, #page_content ul#navbar li:hover {
+#page_content ul#navbar li.selected {
   background: transparent url('/images/transparent-bg/transparent-green-80.png') repeat scroll 0 0;
 }
 
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#page_content ul#navbar li.selected a, #page_content ul#navbar li:hover a {
+#page_content ul#navbar li.selected a {
   color: #2D2E2C;
 }
 
