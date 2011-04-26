@@ -2,8 +2,10 @@ Bvsatyaram::Application.routes.draw do
   get "home/index"
 
   get "home/contact"
-
   match 'contact' => 'home#contact'
+
+  get "home/about"
+  match 'about' => 'home#about'
 
 
   # The priority is based upon order of creation:

@@ -9,19 +9,21 @@
     <%= csrf_meta_tag %>
   </head>
 
-  <body class="home">
+  <body class="<%= 'home' if @home_view %>">
     <div id="wrapper">
       <div id="header">
         <div class="page_wide">
-          <span id="admin_logout">Logged in as Admin <a href="#">(Signout)</a></span>
+          <% if @admin_view %>
+            <span id="admin_logout">Logged in as Admin <a href="#">(Signout)</a></span>
+          <% end %>
           <a href="#"> <img class="logo" src="/images/logo.gif" alt="Satyaram B V" /> </a>
           <ul id="topnav">
             <li><%= link_to("Home", root_path, :class => tab_class_name(:home)) %></li>
             <li><%= link_to "Blog", ExternalLinks::BLOG_URL, :class => "unselected" %></li>
             <li><%= link_to "Blog", ExternalLinks::ARTICLES_URL, :class => "unselected" %></li>
             <li><%= link_to("Projects", root_path, :class => tab_class_name(:projects)) %></li>
-            <li><%= link_to("About", root_path, :class => tab_class_name(:about)) %></li>
-            <li><%= link_to("Contact", root_path, :class => tab_class_name(:contact)) %></li>
+            <li><%= link_to("About", about_path, :class => tab_class_name(:about)) %></li>
+            <li><%= link_to("Contact", contact_path, :class => tab_class_name(:contact)) %></li>
           </ul>
         </div>
       </div>
