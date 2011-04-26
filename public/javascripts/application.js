@@ -1,36 +1,44 @@
-/////////////////
+///////////////////
 // Navigation Tab
 /////////////////
-$(function() {
-  $( "ul#navbar li.unselected" ).hover(
+$(document).ready(function(){
+  $( "ul#topnav li a.unselected" ).hover(
     function() {
-      $( this ).animate({
-        backgroundColor: "#C3B36D"
+      $(this).stop().animate({
+        backgroundColor: "#505050"
       }, {
         queue:false,
-        duration:500
-      } );
-      $(this).children().animate({
-        color: "#2D2E2C"
-      }, {
-        queue:false,
-        duration:500
-      } );
-      return false;
+        duration:300
+      });
     },
     function() {
-      $( this ).animate({
-        backgroundColor: "#282000"
+      $(this).stop().animate({
+        backgroundColor: "#2E2E2E"
       }, {
         queue:false,
-        duration:500
-      } );
-      $(this).children().animate({
-        color: "#CED3C9"
-      }, {
-        queue:false,
-        duration:500
-      } );
-      return false;
+        duration:300
+      });
     });
-})
+});
+
+
+///////////////////
+// Welcome Actions
+///////////////////
+$(document).ready(function(){
+  $('#welcome_actions .action').hover(function(){
+    $(".caption", this).stop().animate({
+      top:'0px'
+    },{
+      queue:false,
+      duration:300
+    });
+  }, function() {
+    $(".caption", this).stop().animate({
+      top:'-40px'
+    },{
+      queue:false,
+      duration:300
+    });
+  });
+});

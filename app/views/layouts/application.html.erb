@@ -4,29 +4,56 @@
     <title>B V Satyaram <%= " | #{@page_title}" if @page_title %> </title>
     <%= stylesheet_link_tag :all %>
     <%= javascript_include_tag :defaults %>
+    <link type="image/gif" href="/images/favicon.gif" rel="icon" />
+    <link type="image/gif" href="/images/favicon.gif" rel="shortcut icon" />
     <%= csrf_meta_tag %>
   </head>
-  <body>
-<div id="page_content">
-  <div id="header"> <span>Satyaram B V</span> </div>
-  <ul id="navbar">
-    <li class="<%= tab_class_name("home") %>"> <%= link_to("Home", root_path) %> </li>
-    <li class="unselected"> <a href="<%= ExternalLinks::BLOG_URL %>">Blog</a> </li>
-    <li class="unselected"> <a href="<%= ExternalLinks::ARTICLES_URL %>">Articles</a> </li>
-    <li class="unselected"> <a href="<%= ExternalLinks::PROJECTS_URL %>">Projects</a> </li>
-    <li class="<%= tab_class_name("contact") %>"> <%= link_to("Contact", contact_path) %> </li>
-  </ul>
-  <div id="content">
-    <p class="inner_content" style="float: right; width: 300px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <a href="#">est</a> laborum.</p>
-    <p class="inner_content" style="margin-right: 330px;">
-      <%= yield %>
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <a href="#">est</a> laborum.
-    </p>
-  </div>
-  <div id="footer"> Copyright &copy; 2010 | <%= link_to("B V Satyaram", root_path) %> </div>
-</div>
-    
 
+  <body class="home">
+    <div id="wrapper">
+      <div id="header">
+        <div class="page_wide">
+          <span id="admin_logout">Logged in as Admin <a href="#">(Signout)</a></span>
+          <a href="#"> <img class="logo" src="/images/logo.gif" alt="Satyaram B V" /> </a>
+          <ul id="topnav">
+            <li><%= link_to("Home", root_path, :class => tab_class_name(:home)) %></li>
+            <li><%= link_to "Blog", ExternalLinks::BLOG_URL, :class => "unselected" %></li>
+            <li><%= link_to "Blog", ExternalLinks::ARTICLES_URL, :class => "unselected" %></li>
+            <li><%= link_to("Projects", root_path, :class => tab_class_name(:projects)) %></li>
+            <li><%= link_to("About", root_path, :class => tab_class_name(:about)) %></li>
+            <li><%= link_to("Contact", root_path, :class => tab_class_name(:contact)) %></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main_content" class="page_wide">
+        <% if @page_heading %>
+          <div id="heading">
+            <h1><%= @page_heading %></h1>
+            <% if @page_subheading %>
+              <p><%= @page_subheading %></p>
+            <% end %>
+          </div>
+        <% end %>
+
+        <div id="content">
+          <% if @page_intro %>
+            <p class="intro"><%= @page_intro %></p>
+          <% end %>
+
+          <%= yield %>
+        </div>
+      </div>
+
+      <div id="clear_footer"></div>
+    </div>
+
+    <div id="footer">
+      <p>
+        Copyright &copy; 2011 <a href="/">BV Satyaram</a>
+        <span class="divider"></span>
+        All Rights Reserved
+      </p>
+    </div>
   </body>
 </html>
