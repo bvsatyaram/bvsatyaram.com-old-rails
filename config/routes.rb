@@ -7,6 +7,8 @@ Bvsatyaram::Application.routes.draw do
   get "home/about"
   match 'about' => 'home#about'
 
+  resources :messages
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

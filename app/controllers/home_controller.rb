@@ -12,6 +12,7 @@ class HomeController < ApplicationController
   def contact
     @page_title = "Contact Me"
     @page_heading = "Contact Me"
+    @message = Message.new
   end
 
 end

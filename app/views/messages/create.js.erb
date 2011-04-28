@@ -1,0 +1,8 @@
+<% msg_status = message_status %>
+
+<% if msg_status[:is_success] %>
+  // Update the form with a new form
+<% end %>
+
+$('#new_message .flash').remove();
+$('#new_message').prepend('<%= escape_javascript message_flash(msg_status[:flash_message], msg_status[:is_success]) %>')

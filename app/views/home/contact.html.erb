@@ -1,10 +1,21 @@
-I am here
 <div id="contact">
-  <div id="contact_form">
+  <h2>Send me a message...</h2>
+  <div id="contact_form" class="clearfix">
+    <%= form_for @message, :remote => true do |f| %>
+      <%= f.label 'Name' %>
+      <%= f.text_field :name, :autocomplete => :off %>
 
+      <%= f.label 'Email *' %>
+      <%= f.text_field :email, :autocomplete => :off %>
+
+      <%= f.label 'Message *' %>
+      <%= f.text_area :body, :autocomplete => :off %>
+
+    <%= f.submit 'Send', :class => 'button' %>
+    <% end %>
   </div>
 
   <div id="follow_me">
-    
+
   </div>
 </div>
