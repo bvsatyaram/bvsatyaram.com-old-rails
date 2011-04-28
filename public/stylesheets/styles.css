@@ -226,7 +226,7 @@ form label {
 }
 
 form input, form textarea {
-  width: 250px;
+  width: 310px;
   margin-left: 20px;
   margin-top: 15px;
   padding: 3px;
@@ -253,7 +253,14 @@ form input.button, a.button {
 }
 
 form input.button {
-  margin-left: 95px;
+  margin-left: 100px;
+}
+
+form .captcha_widget {
+  clear: left;
+  float: left;
+  margin-left: 100px;
+  margin-top: 15px;
 }
 
 /*******************
@@ -393,5 +400,5 @@ body.home #main_content #content #welcome_actions .action .caption .title {
 
 #contact_form {
   border-right: 1px solid #CCCCCC;
-  width: 400px;
+  width: 470px;
 }

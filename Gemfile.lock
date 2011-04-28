@@ -39,6 +39,7 @@ GEM
     fastthread (1.0.7)
     gem_plugin (0.2.3)
     i18n (0.4.2)
+    json (1.5.1)
     linecache (0.43)
     mail (2.2.10)
       activesupport (>= 2.3.6)
@@ -55,6 +56,8 @@ GEM
     rack (1.2.1)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
+    rack-recaptcha (0.4.1)
+      json
     rack-test (0.5.6)
       rack (>= 1.0)
     rails (3.0.3)
@@ -88,6 +91,7 @@ PLATFORMS
 DEPENDENCIES
   ValidateEmail
   mongrel
+  rack-recaptcha
   rails (= 3.0.3)
   ruby-debug
   sqlite3-ruby

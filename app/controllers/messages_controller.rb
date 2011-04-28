@@ -3,9 +3,9 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     @valid_email = ValidateEmail.validate(@message.email)
     @valid_body = !@message.body.blank?
-    if @valid_email && @valid_body
+    @valid_captcha = recaptcha_valid?
+    if @valid_email && @valid_body && @valid_captcha
       @message.save!
-      @new_message = Message.new
     end
   end
 end

@@ -1,7 +1,9 @@
 <% msg_status = message_status %>
+// Reload captcha
+Recaptcha.reload();
 
 // Clear error fields if any
-$(':input', '#new_message').not(':submit').removeClass('error');
+$('.error', '#new_message').removeClass('error');
 <% if msg_status[:is_success] %>
   // Reset Form
   $(':input', '#new_message').not(':submit').val('');

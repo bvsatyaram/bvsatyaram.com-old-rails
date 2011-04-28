@@ -11,6 +11,8 @@
       <%= f.label 'Message *' %>
       <%= f.text_area :body, :autocomplete => :off %>
 
+      <%= content_tag 'div', raw(recaptcha_tag(:challenge, :display => {:theme => 'blackglass'})), :class => 'captcha_widget' %>
+
     <%= f.submit 'Send', :class => 'button' %>
     <% end %>
   </div>

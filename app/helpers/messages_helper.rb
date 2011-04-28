@@ -1,9 +1,9 @@
 module MessagesHelper
-  def message_status(valid_email = @valid_email, valid_body = @valid_body)
+  def message_status(valid_email = @valid_email, valid_body = @valid_body, valid_captcha = @valid_captcha)
     message_status = {}
-    message_status[:is_success] = valid_email && valid_body
+    message_status[:is_success] = valid_email && valid_body && valid_captcha
     message_status[:error_fields] = []
-    if valid_email && valid_body
+    if valid_email && valid_body && valid_captcha
       message_status[:flash_message] = "The message has been successfully sent"
     elsif valid_email && !valid_body
       message_status[:flash_message] = "Please provide a message"
@@ -11,9 +11,11 @@ module MessagesHelper
     elsif !valid_email && valid_body
       message_status[:flash_message] = "Please provide a valid email"
       message_status[:error_fields] = ["#message_email"]
-    else
+    elsif !valid_email && !valid_body
       message_status[:flash_message] = "Please provide a valid email and message"
       message_status[:error_fields] = ["#message_email", "#message_body"]
+    else
+      message_status[:flash_message] = "Please provide valid verification words"
     end
 
     return message_status

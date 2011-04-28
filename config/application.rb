@@ -41,5 +41,11 @@ module Bvsatyaram
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Configure the Rack::Recaptcha middleware
+    config.gem 'rack-recaptcha', :lib => 'rack/recaptcha'
+    config.middleware.use Rack::Recaptcha,
+      :public_key  => '6Ldb4MMSAAAAALJqy8UdTRX_qkd5_0v_karYor2s',
+      :private_key => '6Ldb4MMSAAAAAEzg8N24Xh28phlkhyu9z-kOjozP'
   end
 end
