@@ -1,8 +1,17 @@
 <% msg_status = message_status %>
 
+// Clear error fields if any
+$(':input', '#new_message').not(':submit').removeClass('error');
 <% if msg_status[:is_success] %>
-  // Update the form with a new form
+  // Reset Form
+  $(':input', '#new_message').not(':submit').val('');
+<% else %>
+  <% msg_status[:error_fields].each do |error_field| %>
+    //Add error class to the fields that have errors
+    $('<%= error_field %>', '#new_message').addClass('error');
+  <% end %>
 <% end %>
 
 $('#new_message .flash').remove();
 $('#new_message').prepend('<%= escape_javascript message_flash(msg_status[:flash_message], msg_status[:is_success]) %>')
+$('#new_message .flash').delay(5000).slideUp('slow');

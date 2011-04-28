@@ -68,6 +68,20 @@ body {
   position: relative;
 }
 
+.flash, .notice_flash {
+  background-color: #FFFDDD;
+  border: 1px solid #FFF222;
+  font-weight: bold;
+  margin: 3px 20px;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.error_flash {
+  background-color: #FFDDDD;
+  border: 1px solid #FFAAAA;
+}
+
 /* Header */
 #header {
   background: none repeat scroll 0 0 #222222;
@@ -197,6 +211,10 @@ h2 {
 }
 
 /* Forms */
+form .error {
+  background-color: #FFEEEE;
+}
+
 form label {
   clear: left;
   float: left;
