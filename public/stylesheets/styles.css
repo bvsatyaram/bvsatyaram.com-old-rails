@@ -383,13 +383,16 @@ body.home #main_content #content #welcome_actions .action {
   float: left;
   border: 1px solid #C1C1C1;
   text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   margin-left: 50px;
   background: url('/images/home/welcome_action.jpg') no-repeat scroll 0 0 #FFFFFF;
   position: relative;
   overflow: hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px #CCCCCC;
+  -webkit-box-shadow: 5px 5px 5px #CCCCCC;
+  box-shadow: 5px 5px 5px #c#CCCCCCcc;
 }
 
 body.home #main_content #content #welcome_actions .first {
