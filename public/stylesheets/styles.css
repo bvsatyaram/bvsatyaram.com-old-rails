@@ -292,6 +292,7 @@ form input.button, a.button {
 
 form input.button {
   margin-left: 100px;
+  clear: left;
 }
 
 form .captcha_widget {
@@ -436,7 +437,38 @@ body.home #main_content #content #welcome_actions .action .caption .title {
   display: block;
 }
 
+/* Contact Page */
 #contact_form {
   border-right: 1px solid #CCCCCC;
   width: 470px;
+}
+
+/* Login page */
+#login_form_container {
+  border: 1px solid #CCCCCC;
+  background-color: #F5F5F5;
+  margin-top: 50px;
+  padding: 20px 30px 30px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#login_form_container form#login_form {
+  margin: 0 auto;
+  width: 450px;
+}
+
+form#login_form input.rememberme {
+  clear: left;
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+form#login_form label.rememberme {
+  clear: none;
+  font-weight: normal;
+  width: auto;
+  margin-left: 10px;
 }
