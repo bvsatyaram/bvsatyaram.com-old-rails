@@ -18,6 +18,7 @@ gem 'ruby-debug'
 gem 'mongrel'
 gem 'ValidateEmail'
 gem 'rack-recaptcha', :require => 'rack/recaptcha'
+gem 'devise'
 
 # Bundle the extra gems:
 # gem 'bj'

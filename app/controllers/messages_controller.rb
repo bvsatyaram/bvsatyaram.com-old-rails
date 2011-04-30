@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_filter :authenticate_user!, :except => [:create]
+
   def create
     @message = Message.new(params[:message])
     @valid_email = ValidateEmail.validate(@message.email)
@@ -7,5 +9,11 @@ class MessagesController < ApplicationController
     if @valid_email && @valid_body && @valid_captcha
       @message.save!
     end
+  end
+
+  def index
+    @page_title = "Messages"
+    @page_heading = "Messages"
+    @messages = Message.all
   end
 end

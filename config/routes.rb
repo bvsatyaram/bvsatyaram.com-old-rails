@@ -1,4 +1,9 @@
 Bvsatyaram::Application.routes.draw do
+  devise_for :users do
+    get "signin", :to => "devise/sessions#new"
+    get "signout", :to => "devise/sessions#destroy"
+  end
+
   get "home/index"
 
   get "home/contact"

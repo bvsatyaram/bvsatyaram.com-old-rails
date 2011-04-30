@@ -14,7 +14,7 @@
       <div id="header">
         <div class="page_wide">
           <% if @admin_view %>
-            <span id="admin_logout">Logged in as Admin <a href="#">(Signout)</a></span>
+            <span id="admin_logout">Logged in as Admin <%= link_to "(Signout)", signout_path %></span>
           <% end %>
           <a href="#"> <img class="logo" src="/images/logo.gif" alt="Satyaram B V" /> </a>
           <ul id="topnav">
@@ -37,6 +37,8 @@
             <% end %>
           </div>
         <% end %>
+
+        <%= show_flash  %>
 
         <div id="content">
           <% if @page_intro %>

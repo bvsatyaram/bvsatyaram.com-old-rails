@@ -68,6 +68,31 @@ body {
   position: relative;
 }
 
+#flash_container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#flash_container .flash_msg {
+  padding: 5px 15px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#flash_container .notice {
+  background-color: #FFFDDD;
+  border: 1px solid #FFF222;
+}
+
+#flash_container .error, #flash_container .warning {
+  background-color: #FFDDDD;
+  border: 1px solid #FFAAAA;
+}
+
 .flash, .notice_flash {
   background-color: #FFFDDD;
   border: 1px solid #FFF222;
@@ -161,6 +186,19 @@ ul#topnav li a.selected, ul#topnav li a.selected:hover {
   font-size: 1.2em;
   display: inline;
   margin-left: 5px;
+}
+
+#main_content #heading p a.button,
+#main_content #heading p a.button:hover,
+#main_content #heading p a.button:visited {
+  float: right;
+  font-size: 1em;
+  height: auto;
+  padding: 5px 15px;
+  text-decoration: none;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #main_content #content {
