@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   before_filter :authenticate_user!, :except => [:create]
+  before_filter :check_admin_access, :except => [:create]
 
   def create
     @message = Message.new(params[:message])
