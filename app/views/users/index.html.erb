@@ -1,0 +1,29 @@
+<table id="users" class="tablesorter">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>auth_token</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr id='<%="user_#{user.id}"%>'>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.authentication_token %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Add a user</h2>
+<%= form_for @new_user, :html => {:id => 'add_user_form', :class => 'clearfix'} do |f| %>
+  <%= f.label 'Name' %>
+  <%= f.text_field :name, :autocomplete => :off %>
+
+  <%= f.label 'Email' %>
+  <%= f.text_field :email, :autocomplete => :off %>
+
+  <%= f.submit 'Add', :class => 'button' %>
+<% end %>

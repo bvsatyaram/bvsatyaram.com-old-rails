@@ -19,6 +19,7 @@ gem 'mongrel'
 gem 'ValidateEmail'
 gem 'rack-recaptcha', :require => 'rack/recaptcha'
 gem 'devise'
+gem 'random_password_generator'
 
 # Bundle the extra gems:
 # gem 'bj'

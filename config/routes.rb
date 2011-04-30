@@ -13,6 +13,7 @@ Bvsatyaram::Application.routes.draw do
   match 'about' => 'home#about'
 
   resources :messages
+  resources :users
 
 
   # The priority is based upon order of creation:

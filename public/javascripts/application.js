@@ -42,3 +42,11 @@ $(document).ready(function(){
     });
   });
 });
+
+
+///////////////////
+// Tablesorter
+///////////////////
+$(document).ready(function() {
+  $("#users").tablesorter();
+});
