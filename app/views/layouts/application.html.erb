@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div id="main_content" class="page_wide">
+      <div id="main_content" class="page_wide clearfix">
         <% if @page_heading %>
           <div id="heading">
             <h1><%= @page_heading %></h1>
@@ -40,7 +40,7 @@
 
         <%= show_flash  %>
 
-        <div id="content">
+        <div id="content" class="clearfix">
           <% if @page_intro %>
             <p class="intro"><%= @page_intro %></p>
           <% end %>
