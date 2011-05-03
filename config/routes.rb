@@ -11,6 +11,7 @@ Bvsatyaram::Application.routes.draw do
 
   get "home/about"
   match 'about' => 'home#about'
+  match 'projects' => 'projects#index'
 
   resources :messages
   resources :users

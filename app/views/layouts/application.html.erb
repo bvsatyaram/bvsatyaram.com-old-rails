@@ -21,7 +21,7 @@
             <li><%= link_to("Home", root_path, :class => tab_class_name(:home)) %></li>
             <li><%= link_to "Blog", ExternalLinks::BLOG_URL, :class => "unselected" %></li>
             <li><%= link_to "Articles", ExternalLinks::ARTICLES_URL, :class => "unselected" %></li>
-            <li><%= link_to("Projects", root_path, :class => tab_class_name(:projects)) %></li>
+            <li><%= link_to("Projects", projects_path, :class => tab_class_name(:projects)) %></li>
             <li><%= link_to("About", about_path, :class => tab_class_name(:about)) %></li>
             <li><%= link_to("Contact", contact_path, :class => tab_class_name(:contact)) %></li>
           </ul>

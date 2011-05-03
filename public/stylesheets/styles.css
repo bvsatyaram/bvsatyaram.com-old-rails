@@ -61,6 +61,16 @@ body {
 }
 
 /* Global Styles */
+a, a:visited {
+  color: #333333;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #CC3300;
+  text-decoration: none;
+}
+
 .page_wide {
   margin: 0 auto;
   text-align: left;
@@ -457,6 +467,8 @@ body.home #main_content #content #welcome_actions .action .caption .title {
 
 #follow #follow_me_box {
   -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   background: none repeat scroll 0 0 #F5F5F5;
   border: 1px solid #EBEBEB;
   padding: 14px 10px;
@@ -468,6 +480,8 @@ body.home #main_content #content #welcome_actions .action .caption .title {
   margin: 15px;
   padding: 5px;
   -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #follow #follow_me_box img.twitter {
@@ -515,4 +529,61 @@ form#login_form label.rememberme {
   font-weight: normal;
   width: auto;
   margin-left: 10px;
+}
+
+/* Projects */
+#projects .project {
+  border-bottom: 1px solid #D7D7D7;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#projects .project img.logo {
+  float: left;
+  border: 2px solid #FFC20E;
+}
+
+#projects .project .info {
+  margin-left: 130px;
+}
+
+#projects .project .info h2.title {
+  color: #333333;
+}
+
+#projects .project .info h3.category {
+  color: #ACACAC;
+}
+
+#projects .project .info .description {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+#projects .project .info .description .synopsis {
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border: 1px solid #EBEBEB;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+#projects .project .info .description .synopsis .download_count {
+  font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#projects .project .info .description .synopsis .download_count .count {
+   color: #CC3300;
+    font-size: 1.2em;
+}
+
+#projects .project .info .description .synopsis .related_links .helptext {
+  font-weight: bold;
+}
+
+#projects .project .info .description .synopsis .related_links a {
+  margin: 0 40px 0 10px;
 }
