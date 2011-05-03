@@ -20,6 +20,8 @@ gem 'ValidateEmail'
 gem 'rack-recaptcha', :require => 'rack/recaptcha'
 gem 'devise'
 gem 'random_password_generator'
+gem 'scrapi', '1.2.0'
+gem 'quick_scrapper'
 
 # Bundle the extra gems:
 # gem 'bj'

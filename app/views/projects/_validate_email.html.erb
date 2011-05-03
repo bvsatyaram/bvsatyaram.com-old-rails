@@ -1,0 +1,12 @@
+<% render :layout => 'projects/project',
+  :locals => {:project_title => "ValidateEmail", :project_category => "Rubygem", :project_logo => "ValidateEmail.jpg"} do %>
+  ValidateEmail gem is the ultimate email validator. It not only validates email address by Regex check but also optionally checks for the MX records.
+  <div class="synopsis">
+    <%= download_count_info("validate_email") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/ValidateEmail" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/ValidateEmail" %>
+    </div>
+  </div>
+<% end %>

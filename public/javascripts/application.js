@@ -50,3 +50,10 @@ $(document).ready(function(){
 $(document).ready(function() {
   $("#users").tablesorter();
 });
+
+///////////////////
+// Downloads count loader
+///////////////////
+$(document).ready(function() {
+  $('#validate_email_downloads_count').load('projects/downloads_count?title=validate_email')
+});
