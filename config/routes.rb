@@ -4,16 +4,10 @@ Bvsatyaram::Application.routes.draw do
     get "signout", :to => "devise/sessions#destroy"
   end
 
-  get "home/index"
-
-  get "home/contact"
   match 'contact' => 'home#contact'
-
-  get "home/about"
   match 'about' => 'home#about'
-  get "projects/index"
-  get "projects/downloads_count"
   match 'projects' => 'projects#index'
+  match 'projects/:action' => 'projects#:action'
 
   resources :messages
   resources :users
