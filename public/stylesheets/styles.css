@@ -143,6 +143,14 @@ a:hover {
   border-radius: 8px 8px 8px 8px;
 }
 
+/* Global Style Overrides */
+#projects .project .info h2.title,
+#contact h2, #follow h2{
+  border-bottom: none;
+  margin: 0 0;
+  padding-bottom: 0;
+}
+
 /* Header */
 #header {
   background: none repeat scroll 0 0 #222222;
@@ -235,10 +243,6 @@ ul#topnav li a.selected, ul#topnav li a.selected:hover {
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
-}
-
-#main_content #content {
-  padding-top: 15px;
 }
 
 #content p.intro {
@@ -575,9 +579,6 @@ form#login_form label.rememberme {
 
 #projects .project .info h2.title {
   color: #333333;
-  border-bottom: none;
-  margin: 0 0;
-  padding-bottom: 0;
 }
 
 #projects .project .info h3.category {
