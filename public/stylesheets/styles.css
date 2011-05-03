@@ -575,6 +575,9 @@ form#login_form label.rememberme {
 
 #projects .project .info h2.title {
   color: #333333;
+  border-bottom: none;
+  margin: 0 0;
+  padding-bottom: 0;
 }
 
 #projects .project .info h3.category {

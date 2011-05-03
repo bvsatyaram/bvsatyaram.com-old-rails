@@ -1,0 +1,12 @@
+<% render :layout => 'projects/project',
+  :locals => {:project_title => "truncateHTML", :project_category => "Rubygem", :project_logo => "truncateHTML.jpg"} do %>
+  truncateHTML truncates text like the Rails truncate helper but doesn't break HTML tags, entities, and optionally words.
+  <div class="synopsis">
+    <%= download_count_info("truncateHTML") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/truncateHTML", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/truncateHTML", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>
