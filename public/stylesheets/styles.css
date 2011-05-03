@@ -71,6 +71,20 @@ a:hover {
   text-decoration: none;
 }
 
+#content h2 {
+  border-bottom: 1px solid #D7D7D7;
+  margin: 15px 0;
+  padding-bottom: 10px;
+}
+
+#content ul {
+  margin: 10px 15px;
+}
+
+#content p {
+  margin-bottom: 10px;
+}
+
 .page_wide {
   margin: 0 auto;
   text-align: left;
@@ -115,6 +129,18 @@ a:hover {
 .error_flash {
   background-color: #FFDDDD;
   border: 1px solid #FFAAAA;
+}
+
+.quote {
+  background: url("/images/icons/quotes.gif") no-repeat scroll 5px 3px #F5F5F5;
+  border: 1px solid #EBEBEB;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 8px 8px 50px;
+  margin-bottom: 15px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
 }
 
 /* Header */
@@ -402,7 +428,7 @@ body.home #main_content #content #welcome_actions .action {
   border-radius: 5px;
   -moz-box-shadow: 5px 5px 5px #CCCCCC;
   -webkit-box-shadow: 5px 5px 5px #CCCCCC;
-  box-shadow: 5px 5px 5px #c#CCCCCCcc;
+  box-shadow: 5px 5px 5px #CCCCCC;
 }
 
 body.home #main_content #content #welcome_actions .first {
@@ -572,12 +598,12 @@ form#login_form label.rememberme {
 
 #projects .project .info .description .synopsis .download_count {
   font-weight: bold;
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 #projects .project .info .description .synopsis .download_count .count {
-   color: #CC3300;
-    font-size: 1.2em;
+  color: #CC3300;
+  font-size: 1.2em;
 }
 
 #projects .project .info .description .synopsis .related_links .helptext {

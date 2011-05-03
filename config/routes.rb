@@ -9,6 +9,9 @@ Bvsatyaram::Application.routes.draw do
   match 'projects' => 'projects#index'
   match 'projects/:action' => 'projects#:action'
 
+  # Project Demos
+  get "projects/lazy_styler"
+
   resources :messages
   resources :users
 

@@ -1,0 +1,14 @@
+<% render :layout => 'projects/project',
+  :locals => {:project_title => "quick_scrapper", :project_category => "Rubygem", :project_logo => "quick_scrapper.jpg"} do %>
+  quick_scrapper scraps the selection associated to css_selector from a given page.
+  quick_scrapper uses the scrapi library to do the scraping, avoiding all the complicated method calls.
+  Just one method to do all the scraping required!!
+  <div class="synopsis">
+    <%= download_count_info("quick_scrapper") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/Quick-Scrapper", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/quick_scrapper", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

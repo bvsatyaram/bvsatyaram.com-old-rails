@@ -34,7 +34,8 @@ module Bvsatyaram
      config.action_view.javascript_expansions[:defaults] =
        ['https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js',
         'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js',
-        'jquery-ujs', 'jquery.tablesorter.min']
+        'jquery-ujs', 'jquery.tablesorter.min', 'jquery.lazy_styler',
+        'jquery.beautyOfCode.js']
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

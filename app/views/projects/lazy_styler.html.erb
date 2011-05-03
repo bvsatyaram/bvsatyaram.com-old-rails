@@ -1,0 +1,177 @@
+<div class="quote">Efficiency is intelligent laziness. - David Dunham</div>
+<p>The Lazy Styler plugin is a boon to the lazy web designers.</p>
+
+<h2>Example Usage</h2>
+<p><a href="/javascripts/jquery.lazy_styler.js">Download</a> the lazy styler plugin and reference it in the head section:</p>
+<pre class="code">
+  <code class="html">
+    &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    &lt;script type="text/javascript" src="scripts/jquery.lazy_styler.js"></script>
+  </code>
+</pre>
+
+
+<p>We need to pick a unique class name for the elements to be handled by the lazy styler.
+  For the purpose of this demo, let us assume that the unique class name we choose is <b><em>lazyStyle</em></b>.
+  So, let us apply the class name to a div.
+</p>
+
+<pre class="code">
+  <code class="html">
+    &lt;div class="lazyStyle">
+      This div is now handled by lazy styler plugin.
+    &lt;/div>
+  </code>
+</pre>
+
+<p>And lets add the following few lines to our JS file to initiate the plugin.</p>
+
+<pre class="code">
+  <code class="js">
+    $(document).ready(function() {
+      $('.lazyStyle').lazyStyler();
+    });
+  </code>
+</pre>
+
+<p>
+  This should make the div available for Lazy Styler.
+  The following is a preview of the div.
+  Please note that the div has no styling as we have not declared any style yet.
+</p>
+
+<div class="lazyStyle">
+  This div is now handled by lazy styler plugin.
+</div>
+
+<p>
+  The Lazy Styler plugin can be used to add to the coders laziness in the following two ways:
+</p>
+
+<ul>
+  <li><a href="#inline_styling">Inline styling</a></li>
+  <li><a href="#css3_styling">CSS3 styling</a></li>
+</ul>
+
+<h2 id="inline_styling">Inline Styling</h2>
+<p>
+  Now we can add any style by custom class names. The custom class will be the word 'lazy' followed by property name  followed by property values, words separated by an underscore.
+  For example, to have background-color red, we add the class 'background-color_red'.
+</p>
+
+<pre class="code">
+  <code class="html">
+    &lt;div class="lazyStyle lazy_background-color_red">
+      This div now has red as the background color.
+    &lt;/div>
+  </code>
+</pre>
+
+<p>
+  The div now looks as follows:
+</p>
+
+<div class="lazyStyle lazy_background-color_red">
+  This div now has red as the background color.
+</div>
+
+<p>
+  Let us say we would like to have the following css properties applied to the div:
+</p>
+
+<pre class="code">
+  <code class="css">
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #EBEBEB;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 12px 8px 8px 50px;
+  </code>
+</pre>
+
+<p>
+  For these styles, we will apply the following classes:
+</p>
+
+<pre class="code">
+  <code class="plain">
+    lazy_background_none_repeat_scroll_0_0_#F5F5F5
+    lazy_border_1_solid_#EBEBEB
+    lazy_font-size_1.2em
+    lazy_font-weight_bold
+    lazy_margin-top_15
+    lazy_padding_12_8_8_50
+  </code>
+</pre>
+
+<p>
+  Note that 'px' need not be suffixed to numerical values when the intended unit is px.
+  Of course, the other units should be suffixed as shown in '1.2em' in the above example.
+</p>
+
+<pre class="code">
+  <code class="html">
+    &lt;div class="lazyStyle lazy_background_none_repeat_scroll_0_0_#F5F5F5 lazy_border_1_solid_#EBEBEB lazy_font-size_1.2em lazy_font-weight_bold lazy_margin-top_15 lazy_padding_12_8_8_50">
+      This div now is styled well.
+    &lt;/div>
+  </code>
+</pre>
+
+<p>
+  The div now looks as follows:
+</p>
+
+<div class="lazyStyle lazy_background_none_repeat_scroll_0_0_#F5F5F5 lazy_border_1_solid_#EBEBEB lazy_font-size_1.2em lazy_font-weight_bold lazy_margin-top_15 lazy_padding_12_8_8_50">
+  This div now is styled well.
+</div>
+
+<h2 id="css3_styling">CSS3 Styling</h2>
+<p>
+  Its frustrating to add rounded corners to div using CSS3, especially when you are lazy.
+  To add 8px radius to a div, the following four lines of CSS need to be added.
+</p>
+
+<pre class="code">
+  <code class="css">
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -ktml-border-radius: 8px;
+    border-radius: 8px;
+  </code>
+</pre>
+
+<p>
+  To do the same, all that we need to do is add the following two classes to the div.
+</p>
+
+<pre class="code">
+  <code class="plain">
+    lazyStyle
+    lazy_radius_8
+  </code>
+</pre>
+
+<p>
+  The same is the case with shadows too. To have a 5px shadow, we add the following 4 lines of CSS.
+</p>
+
+<pre class="code">
+  <code class="css">
+    -moz-box-shadow: 5px 5px 5px #CCCCCC;
+    -webkit-box-shadow: 5px 5px 5px #CCCCCC;
+    -khtml-box-shadow: 5px 5px 5px #CCCCCC;
+    box-shadow: 5px 5px 5px #c#CCCCCCcc;
+  </code>
+</pre>
+
+<p>
+  To do the same, all that we need to do is add the following two classes to the div.
+</p>
+
+<pre class="code">
+  <code class="plain">
+    lazyStyle
+    lazy_shadow_5_5_5_#CCCCCC;
+  </code>
+</pre>

@@ -55,5 +55,20 @@ $(document).ready(function() {
 // Downloads count loader
 ///////////////////
 $(document).ready(function() {
-  $('#validate_email_downloads_count').load('projects/downloads_count?title=validate_email')
+  $('#validate_email_downloads_count').load('projects/downloads_count?title=validate_email');
+  $('#quick_scrapper_downloads_count').load('projects/downloads_count?title=quick_scrapper');
+});
+
+///////////////////
+// Code Highlighting
+///////////////////
+$(document).ready(function() {
+  $.beautyOfCode.init();
+});
+
+///////////////////
+// Lazy Styler
+///////////////////
+$(document).ready(function() {
+  $('.lazyStyle').lazyStyler();
 });
