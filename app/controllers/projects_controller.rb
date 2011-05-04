@@ -19,6 +19,7 @@ class ProjectsController < ApplicationController
     @page_title = "Projects | Lazy Styler"
     @page_heading = "Lazy Styler"
     @page_subheading = "project demo"
+    @initial_beauty_of_code_js = true
   end
 
   private
