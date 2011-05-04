@@ -25,5 +25,7 @@ Bvsatyaram::Application.configure do
 
   # Mail config required for devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  Scraper::Base.parser :html_parser
 end
 
