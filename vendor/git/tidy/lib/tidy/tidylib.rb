@@ -27,6 +27,7 @@ module Tidylib
     extern "int tidyRunDiagnostics(void*)"
     extern "int tidySaveBuffer(void*, void*)"
     extern "int tidySetErrorBuffer(void*, void*)"
+    extern "void tidyBufInit(void*)"
   end
   
   # tidyBufFree
@@ -106,6 +107,11 @@ module Tidylib
   #
   def translate_name(name)
     name.to_s.gsub('_', '-')
+  end
+
+  #tidyBufInit, using default allocator
+  def buf_init(buf)
+    tidyBufInit(buf)
   end
 
 end

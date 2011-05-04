@@ -20,6 +20,7 @@ class Tidybuf
 
   def initialize
     @struct = TidyBuffer.malloc
+    Tidylib.buf_init(@struct)
   end
     
   # Free current contents and zero out.
