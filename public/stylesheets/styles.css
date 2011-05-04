@@ -145,7 +145,8 @@ a:hover {
 
 /* Global Style Overrides */
 #projects .project .info h2.title,
-#contact h2, #follow h2{
+#contact h2, #follow h2,
+body.home #main_content #content #welcome h2 {
   border-bottom: none;
   margin: 0 0;
   padding-bottom: 0;
@@ -389,7 +390,7 @@ body.home #main_content #content #welcome h2 {
 }
 
 body.home #main_content #content #welcome p {
-  color: #CCCCCC;
+  color: #EEEEEE;
   font-size: 2em;
   height: 160px;
   padding-right: 20px;
