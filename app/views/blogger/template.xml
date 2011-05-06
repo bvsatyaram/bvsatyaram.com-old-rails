@@ -1552,13 +1552,13 @@ body.mobile .AdSense {
     </div>
 
     <footer>
-    <div id="footer">
+    <div id='footer'>
       <p>
-        Copyright &#169; 2011 <a href="http://bvsatyaram.com">BV Satyaram</a>
-        <span class="divider"></span>
+        Copyright &#169; 2011 <a href='http://bvsatyaram.com'>BV Satyaram</a>
+        <span class='divider'/>
         All Rights Reserved
-        <span class="divider"></span>
-        Blog Powered by <a href="http://www.blogger.com/">Blogger</a>
+        <span class='divider'/>
+        Blog Powered by <a href='http://www.blogger.com/'>Blogger</a>
       </p>
     </div>
     </footer>
@@ -1948,4 +1948,4 @@ body.mobile .AdSense {
   </div>
 </b:includable>
 </b:widget>
-</b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+</b:section-contents></html>
