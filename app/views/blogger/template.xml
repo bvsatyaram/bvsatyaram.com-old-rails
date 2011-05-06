@@ -971,6 +971,10 @@ body.mobile .AdSense {
       .main-inner .fauxcolumn-right-outer {
         display: none;
       }
+
+      ol, ul {
+        margin: 10px 0 10px 30px;
+      }
       ]]>
     </b:template-skin>
 
