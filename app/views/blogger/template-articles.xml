@@ -848,8 +848,8 @@ body.mobile .AdSense {
           <a href='http://bvsatyaram.com/'> <img alt='Satyaram B V' class='logo' src='http://bvsatyaram.com/images/logo.gif'/> </a>
           <ul id='topnav'>
             <li><a class='unselected' href='http://bvsatyaram.com/'>Home</a></li>
-            <li><a class='selected' href='http://blog.bvsatyaram.com/'>Blog</a></li>
-            <li><a class='unselected' href='http://articles.bvsatyaram.com/'>Articles</a></li>
+            <li><a class='unselected' href='http://blog.bvsatyaram.com/'>Blog</a></li>
+            <li><a class='selected' href='http://articles.bvsatyaram.com/'>Articles</a></li>
             <li><a class='unselected' href='http://bvsatyaram.com/projects'>Projects</a></li>
             <li><a class='unselected' href='http://bvsatyaram.com/about'>About</a></li>
             <li><a class='unselected' href='http://bvsatyaram.com/contact'>Contact</a></li>
@@ -1620,7 +1620,7 @@ body.mobile .AdSense {
 </macro:includable>
 
 <b:section-contents id='sidebar-right-1'>
-<b:widget id='CustomSearch1' locked='false' title='Search Blog' type='CustomSearch'>
+<b:widget id='CustomSearch1' locked='false' title='Search Articles' type='CustomSearch'>
 <b:includable id='main'>
     <!-- only display title if it's non-empty -->
     <b:if cond='data:title != &quot;&quot;'>
@@ -1817,7 +1817,7 @@ body.mobile .AdSense {
   </ul>
 </b:includable>
 </b:widget>
-<b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'>
+<b:widget id='PopularPosts1' locked='false' title='Popular Articles' type='PopularPosts'>
 <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content popular-posts'>
