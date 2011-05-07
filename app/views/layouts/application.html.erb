@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>B V Satyaram <%= " | #{@page_title}" if @page_title %> </title>
-    <%= stylesheet_link_tag 'styles', 'custom_fonts', 'tablesorter/style' %>
+    <%= stylesheet_link_tag 'styles', 'custom_fonts', 'jquery-ui/smoothness', 'tablesorter/style' %>
     <%= javascript_include_tag :defaults %>
     <link type="image/gif" href="/images/favicon.gif" rel="icon" />
     <link type="image/gif" href="/images/favicon.gif" rel="shortcut icon" />
@@ -16,7 +16,7 @@
           <% if @admin_view %>
             <span id="admin_logout">Logged in as Admin <%= link_to "(Signout)", signout_path %></span>
           <% end %>
-          <a href="#"> <img class="logo" src="/images/logo.gif" alt="Satyaram B V" /> </a>
+          <a href="http://bvsatyaram.com/"> <img class="logo" src="/images/logo.gif" alt="Satyaram B V" /> </a>
           <ul id="topnav">
             <li><%= link_to("Home", root_path, :class => tab_class_name(:home)) %></li>
             <li><%= link_to "Blog", ExternalLinks::BLOG_URL, :class => "unselected" %></li>

@@ -343,6 +343,67 @@ form .captcha_widget {
   margin-top: 15px;
 }
 
+/* Tabs */
+#tabs {
+  -moz-border-radius: 10px 10px 10px 10px;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border: 1px solid #EBEBEB;
+  padding: 15px;
+  width: 930px;
+}
+
+#tabs ul {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  margin: 35px 0 0;
+  width: 225px;
+}
+
+#tabs ul li {
+  background: none no-repeat scroll 0 0 transparent;
+  border: medium none;
+  width: 225px;
+}
+
+#tabs ul li.ui-tabs-selected {
+  background: url('/images/selected_tab_bg.png') no-repeat scroll 0 0 transparent;
+}
+
+#tabs ul li a,
+#tabs ul li a:visited {
+  color: #CC3300;
+  text-decoration: none;
+  height: 20px;
+  padding: 6px 0 2px 20px;
+  font-size: 12px;
+}
+
+#tabs ul li a:hover{
+  text-decoration: underline;
+}
+
+#tabs ul li.ui-tabs-selected a,
+#tabs ul li.ui-tabs-selected a:visited,
+#tabs ul li.ui-tabs-selected a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#tabs #tabs_content {
+  border-left: 1px solid #D7D7D7;
+  margin-left: 240px;
+  text-align: justify;
+}
+
+#tabs #tabs_content .ui-tabs-panel {
+  padding: 0 15px;
+}
+
+#tabs #tabs_content h2 {
+  border: medium none;
+  margin: 0;
+}
+
 /*******************
 Page Specific Styles
 *******************/

@@ -79,3 +79,12 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+////////////////////
+// jQuery UI Tabs
+////////////////////
+$(document).ready(function() {
+    $("#tabs").tabs();
+    $("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+    $("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
+});
