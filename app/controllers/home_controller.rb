@@ -6,7 +6,6 @@ class HomeController < ApplicationController
 
   def about
     @page_title = "About Me"
-    @page_heading = "About Me"
   end
 
   def contact

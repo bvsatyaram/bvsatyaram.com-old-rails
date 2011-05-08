@@ -679,3 +679,42 @@ form#login_form label.rememberme {
 #projects .project .info .description .synopsis .related_links a {
   margin: 0 40px 0 10px;
 }
+
+/* About */
+#about {
+  background: url('/images/about.jpg') no-repeat scroll 0 0 #3A1705;
+  width: 960px;
+  height: 840px;
+  position: relative;
+}
+
+#about #info {
+  position: relative;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 440px;
+  height: 780px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 1.1em;
+  font-family: TangerineBold,Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+  opacity: .85;
+  /* For IE 5-7 */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  /* For IE 8 */
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+#about #info p {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about #info a, #about #info a:visited {
+  color: #FFFFFF;
+}
+
+#about #info a:hover {
+  color: #CC3300;
+  text-decoration: none;
+}
