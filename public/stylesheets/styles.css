@@ -421,7 +421,7 @@ body.home #main_content #content {
 body.home #main_content #content #welcome {
   width: 940px;
   height: 280px;
-  background: url('/images/home/main_pane_bg.png') no-repeat scroll 0 0 #3E3E3E;
+  background: url('/images/home/main_pane_bg.jpg') no-repeat scroll 0 0 #3E3E3E;
   padding: 10px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
