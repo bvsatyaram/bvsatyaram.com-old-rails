@@ -693,21 +693,28 @@ form#login_form label.rememberme {
 
 /* About */
 #about {
-  background: url('/images/about.jpg') no-repeat scroll 0 0 #3A1705;
-  width: 960px;
-  height: 840px;
+  background: url('/images/about.jpg') no-repeat scroll 0 0 #140F01;
+  width: 950px;
+  height: 830px;
   position: relative;
+  border: 5px solid #FFC20E;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #about #info {
   position: relative;
-  background-color: #000000;
+  background-color: #140F01;
   color: #FFFFFF;
   width: 440px;
-  height: 780px;
+  height: 770px;
   padding: 30px;
   text-align: justify;
   font-size: 1.1em;
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
   font-family: TangerineBold,Arial,Tahoma,Helvetica,FreeSans,sans-serif;
   opacity: .85;
   /* For IE 5-7 */
