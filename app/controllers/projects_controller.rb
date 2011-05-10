@@ -34,6 +34,8 @@ class ProjectsController < ApplicationController
       scrap_params[:url] = "http://rubygems.org/gems/quick_scrapper"
     when "truncateHTML"
       scrap_params[:url] = "http://rubygems.org/gems/truncateHTML"
+    when "flames"
+      scrap_params[:url] = "http://rubygems.org/gems/flames"
     end
 
     return scrap_params

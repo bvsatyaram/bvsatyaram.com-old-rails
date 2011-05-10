@@ -1,0 +1,13 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Flames", :project_category => "Rubygem", :project_logo => "flames.jpg"} do %>
+  Flames is a Ruby implementation of the Flames love game.
+  <div class="synopsis">
+    <%= download_count_info("flames") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Demo", "http://flames.heroku.com/", :target => "_blank" %>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/Flames", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/flames", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

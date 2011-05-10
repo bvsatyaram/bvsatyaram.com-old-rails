@@ -55,6 +55,7 @@ $(document).ready(function() {
 // Downloads count loader
 ///////////////////
 $(document).ready(function() {
+  $('#flames_downloads_count').load('projects/downloads_count?title=flames');
   $('#validate_email_downloads_count').load('projects/downloads_count?title=validate_email');
   $('#quick_scrapper_downloads_count').load('projects/downloads_count?title=quick_scrapper');
   $('#truncateHTML_downloads_count').load('projects/downloads_count?title=truncateHTML');
