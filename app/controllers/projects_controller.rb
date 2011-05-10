@@ -36,6 +36,14 @@ class ProjectsController < ApplicationController
       scrap_params[:url] = "http://rubygems.org/gems/truncateHTML"
     when "flames"
       scrap_params[:url] = "http://rubygems.org/gems/flames"
+    when "random_password_generator"
+      scrap_params[:url] = "http://rubygems.org/gems/random_password_generator"
+    when "facebooker"
+      scrap_params[:url] = "http://rubygems.org/gems/facebooker3"
+    when "ruby_data_structures"
+      scrap_params[:url] = "http://rubygems.org/gems/RubyDataStructures"
+    when "back_mark"
+      scrap_params[:url] = "http://rubygems.org/gems/back_mark"
     end
 
     return scrap_params

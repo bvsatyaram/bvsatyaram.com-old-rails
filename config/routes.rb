@@ -12,6 +12,9 @@ Bvsatyaram::Application.routes.draw do
   # Project Demos
   get "projects/lazy_styler"
 
+  # Downloads
+  match 'download' => 'home#download'
+
   resources :messages
   resources :users
 

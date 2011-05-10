@@ -1,0 +1,12 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Ruby Data Structures", :project_category => "Rubygem", :project_logo => "ruby_data_structures.jpg"} do %>
+  Implementation of standard data structures in Ruby.
+  <div class="synopsis">
+    <%= download_count_info("ruby_data_structures") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/Ruby-Data-Structures", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/RubyDataStructures", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

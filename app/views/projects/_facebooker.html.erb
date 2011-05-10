@@ -1,0 +1,12 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Facebooker3", :project_category => "Rubygem", :project_logo => "facebooker.png"} do %>
+  Facebooker!!
+  <div class="synopsis">
+    <%= download_count_info("facebooker") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "#", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/facebooker3", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

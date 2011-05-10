@@ -14,4 +14,13 @@ class HomeController < ApplicationController
     @message = Message.new
   end
 
+  def download
+    file_name = params[:file_name]
+    if file_name && file_name == "pomodoro.jar"
+      send_file "#{Rails.root}/public/downloads/pomodomo.jar", :file_name => "pomodoro.jar"
+    else
+      raise "Invalid file"
+    end
+  end
+
 end

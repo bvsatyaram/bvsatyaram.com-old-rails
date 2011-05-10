@@ -1,0 +1,11 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Disable on Submit", :project_category => "Rails Plugin", :project_logo => "disable_on_submit.jpg"} do %>
+  disable_on_submit rails plugin avoids mulitple submission of forms by disabling the submit button once pressed.
+  The button is re-enabled once the response is back.
+  <div class="synopsis">
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/disable_on_submit", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

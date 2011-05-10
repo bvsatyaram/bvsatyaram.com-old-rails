@@ -55,8 +55,12 @@ $(document).ready(function() {
 // Downloads count loader
 ///////////////////
 $(document).ready(function() {
+  $('#back_mark_downloads_count').load('projects/downloads_count?title=back_mark');
   $('#flames_downloads_count').load('projects/downloads_count?title=flames');
+  $('#random_password_generator_downloads_count').load('projects/downloads_count?title=random_password_generator');
   $('#validate_email_downloads_count').load('projects/downloads_count?title=validate_email');
+  $('#facebooker_downloads_count').load('projects/downloads_count?title=facebooker');
+  $('#ruby_data_structures_downloads_count').load('projects/downloads_count?title=ruby_data_structures');
   $('#quick_scrapper_downloads_count').load('projects/downloads_count?title=quick_scrapper');
   $('#truncateHTML_downloads_count').load('projects/downloads_count?title=truncateHTML');
 });

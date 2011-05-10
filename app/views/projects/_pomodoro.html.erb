@@ -1,0 +1,16 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Pomodoro", :project_category => "JRuby Desktop App", :project_logo => "pomodoro.jpg"} do %>
+  <%= link_to "Pomodoro Technique", "http://www.pomodorotechnique.com/" %> is a way to get most out of time management.
+  This desktop application helps you implement this technique is a easy way.
+  The application is made using JRuby.
+  Essentially its a Java Application written in Ruby.
+  Please note that the product is still in development phase.
+  It is known to work perfectly on Linux and Mac. It has few issues running on Windows.
+  <div class="synopsis">
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/Pomodoro", :target => "_blank" %>
+      <%= link_to "Download", download_path(:file_name => "pomodoro.jar"), :target => "_blank" %>
+    </div>
+  </div>
+<% end %>

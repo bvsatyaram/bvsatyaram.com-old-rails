@@ -1,0 +1,12 @@
+<%= render :layout => 'projects/project',
+  :locals => {:project_title => "Back Mark", :project_category => "Rubygem", :project_logo => "back_mark.jpg"} do %>
+  Backmark gem can be used to mark pages with labels that can be linked back from future pages as back links.
+  <div class="synopsis">
+    <%= download_count_info("back_mark") %>
+    <div class="related_links">
+      <span class="helptext">Related Links: </span>
+      <%= link_to "Source Code", "https://github.com/bvsatyaram/back_mark", :target => "_blank" %>
+      <%= link_to "Rubygem Page", "https://rubygems.org/gems/back_mark", :target => "_blank" %>
+    </div>
+  </div>
+<% end %>
