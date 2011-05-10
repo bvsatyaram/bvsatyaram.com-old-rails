@@ -143,6 +143,11 @@ a:hover {
   border-radius: 8px 8px 8px 8px;
 }
 
+.strong {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
 /* Global Style Overrides */
 #projects .project .info h2.title,
 #contact h2, #follow h2,
@@ -352,25 +357,25 @@ form .captcha_widget {
   width: 930px;
 }
 
-#tabs ul {
+#tabs ul#tab_links {
   background: none repeat scroll 0 0 transparent;
   border: medium none;
   margin: 35px 0 0;
   width: 225px;
 }
 
-#tabs ul li {
+#tabs ul#tab_links li {
   background: none no-repeat scroll 0 0 transparent;
   border: medium none;
   width: 225px;
 }
 
-#tabs ul li.ui-tabs-selected {
+#tabs ul#tab_links li.ui-tabs-selected {
   background: url('/images/selected_tab_bg.png') no-repeat scroll 0 0 transparent;
 }
 
-#tabs ul li a,
-#tabs ul li a:visited {
+#tabs ul#tab_links li a,
+#tabs ul#tab_links li a:visited {
   color: #CC3300;
   text-decoration: none;
   height: 20px;
@@ -378,13 +383,13 @@ form .captcha_widget {
   font-size: 12px;
 }
 
-#tabs ul li a:hover{
+#tabs ul#tab_links li a:hover{
   text-decoration: underline;
 }
 
-#tabs ul li.ui-tabs-selected a,
-#tabs ul li.ui-tabs-selected a:visited,
-#tabs ul li.ui-tabs-selected a:hover {
+#tabs ul#tab_links li.ui-tabs-selected a,
+#tabs ul#tab_links li.ui-tabs-selected a:visited,
+#tabs ul#tab_links li.ui-tabs-selected a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -428,7 +433,8 @@ body.home #main_content #content #welcome {
   border-radius: 8px;
 }
 
-body.home #main_content #content #welcome img {
+body.home #main_content #content #welcome img,
+img#display_pic {
   border: 5px solid #FFC20E;
   height: 250px;
   float: left;
@@ -436,6 +442,11 @@ body.home #main_content #content #welcome img {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
+}
+
+img#display_pic {
+  float: right;
+  margin: 0 0 0 30px;
 }
 
 body.home #main_content #content #welcome .message {
@@ -735,4 +746,69 @@ form#login_form label.rememberme {
 #about #info a:hover {
   color: #CC3300;
   text-decoration: none;
+}
+
+/* Resume */
+#resume p#intro {
+  color: #666666;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  width: 660px;
+  margin-top: 20px;
+}
+
+#resume p#intro:first-line {
+  margin-left: 15px;
+}
+
+#resume h3 {
+  color: #666666;
+  font-size: 1em;
+  margin: 15px 0 8px;
+  text-transform: uppercase;
+}
+
+#resume p {
+  margin-bottom: 15px;
+}
+
+#resume #lets_talk {
+  -moz-border-radius: 10px 10px 10px 10px;
+  border: 5px solid #FFC20E;
+  margin: 30px 0 30px 105px;
+  padding: 20px;
+  width: 400px;
+}
+
+#resume #lets_talk img {
+  float: right;
+}
+
+#resume #lets_talk p {
+  margin-bottom: 10px;
+}
+
+#resume #lets_talk p.name {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#resume #lets_talk p.email {
+  font-style: italic;
+}
+
+#resume #projects .project {
+  border-bottom: medium none;
+  border-top: 1px solid #C3C3C3;
+  padding-top: 15px;
+}
+
+#resume #projects .project h3.category {
+  margin: 0 0;
+}
+
+#resume #projects .project .synopsis,
+#resume .quote {
+  border: 1px solid #C3C3C3;
+  background-color: #EBEBEB;
 }
