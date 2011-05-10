@@ -705,7 +705,7 @@ form#login_form label.rememberme {
 
 #about #info {
   position: relative;
-  background-color: #140F01;
+  background-color: #050400;
   color: #FFFFFF;
   width: 440px;
   height: 770px;
@@ -716,11 +716,11 @@ form#login_form label.rememberme {
   -webkit-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   font-family: TangerineBold,Arial,Tahoma,Helvetica,FreeSans,sans-serif;
-  opacity: .85;
+  opacity: .75;
   /* For IE 5-7 */
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   /* For IE 8 */
-  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
 
 #about #info p {
