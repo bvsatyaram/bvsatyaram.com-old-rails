@@ -148,6 +148,10 @@ a:hover {
   font-size: 0.9em;
 }
 
+p.strong {
+  margin-top: 20px;
+}
+
 /* Global Style Overrides */
 #projects .project .info h2.title,
 #contact h2, #follow h2,
