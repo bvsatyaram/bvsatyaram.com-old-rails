@@ -825,3 +825,10 @@ form#login_form label.rememberme {
   margin-left: 120px;
   margin-bottom: 8px;
 }
+
+#resume a.lightbox img {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #D7D7D7;
+  margin: 0 10px 10px 0;
+}

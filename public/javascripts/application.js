@@ -89,14 +89,24 @@ _gaq.push(['_trackPageview']);
 // jQuery UI Tabs
 ////////////////////
 $(document).ready(function() {
-    $("#tabs").tabs();
-    $("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
-    $("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
+  $("#tabs").tabs();
+  $("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+  $("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
 });
 
 ///////////////////
 // jQuery Lightbox
 ///////////////////
 $(document).ready(function() {
-	$('a.lightbox').lightBox();
+  $('a.lightbox').lightBox(
+  {
+    overlayBgColor: '#FFF',
+    overlayOpacity: 0.6,
+    imageLoading: '/images/lightbox/lightbox-ico-loading.gif',
+    imageBtnClose: '/images/lightbox/lightbox-btn-close.gif',
+    imageBtnPrev: '/images/lightbox/lightbox-btn-prev.gif',
+    imageBtnNext: '/images/lightbox/lightbox-btn-next.gif',
+    imageBlank: '/images/lightbox/lightbox-blank.gif'
+  }
+  );
 });
