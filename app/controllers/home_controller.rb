@@ -16,10 +16,13 @@ class HomeController < ApplicationController
 
   def download
     file_name = params[:file_name]
-    if file_name && file_name == "pomodoro.jar"
-      send_file "#{Rails.root}/public/downloads/pomodomo.jar", :file_name => "pomodoro.jar"
+    raise "Invalid request" unless file_name
+    if file_name == "pomodoro.jar"
+      send_file "#{Rails.root}/downloads/pomodomo.jar", :file_name => "pomodoro.jar"
+    elsif current_user && file_name == "resume.pdf"
+      send_file "#{Rails.root}/downloads/bvsatyaram.pdf", :file_name => "bvsatyaram.pdf"
     else
-      raise "Invalid file"
+      raise "Invalid request"
     end
   end
 
