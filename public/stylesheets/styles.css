@@ -704,7 +704,7 @@ form#login_form label.rememberme {
 }
 
 #projects .project .info .description .synopsis .related_links a {
-  margin: 0 30px 0 10px;
+  margin: 0 40px 0 10px;
 }
 
 /* About */
@@ -836,4 +836,8 @@ form#login_form label.rememberme {
   height: 72px;
   border: 3px solid #D7D7D7;
   margin: 0 10px 10px 0;
+}
+
+#resume #projects .project .info .description .synopsis .related_links a {
+  margin: 0 20px 0 10px;
 }
