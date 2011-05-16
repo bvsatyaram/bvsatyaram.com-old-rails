@@ -670,12 +670,13 @@ form#login_form label.rememberme {
 }
 
 #projects .project .info h3.category {
-  color: #ACACAC;
+  color: #666666;
 }
 
 #projects .project .info .description {
   margin-top: 10px;
   font-size: 1.1em;
+  text-align: justify;
 }
 
 #projects .project .info .description .synopsis {
