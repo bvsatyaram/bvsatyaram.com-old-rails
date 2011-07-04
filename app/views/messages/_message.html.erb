@@ -1,0 +1,5 @@
+<div class="message" id="message_<%=message.id%>">
+  <p class="body"><%= raw message.body.gsub(/\n/, '<br/>') %></p>
+  <span class="time">Sent on: <%= message.created_at.strftime("%d %B, %Y at %r") %></span>
+  <span class="sender">From: <%= raw "#{message.name} (#{mail_to(message.email)})" %></span>
+</div>

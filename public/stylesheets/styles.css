@@ -753,6 +753,26 @@ form#login_form label.rememberme {
   text-decoration: none;
 }
 
+/* Messages */
+#messages .message {
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border: 1px solid #EBEBEB;
+  margin-top: 10px;
+  padding: 14px 10px;
+  font-size: 0.9em;
+}
+
+#messages .message .body {
+  font-size: 1.2em;
+}
+
+#messages .message .sender {
+  margin-left: 30px;
+}
+
 /* Resume */
 #resume p#intro {
   color: #666666;
