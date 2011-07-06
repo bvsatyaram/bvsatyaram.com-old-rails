@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
     @valid_captcha = recaptcha_valid?
     if @valid_email && @valid_body && @valid_captcha
       @message.save!
+      ApplicationMailer.message_notification(@message).deliver
     end
   end
 

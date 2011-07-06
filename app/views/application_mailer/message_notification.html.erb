@@ -1,0 +1,8 @@
+<p>Satyaram, <br /> <br />
+You have received a message via <%= link_to "bvsatyaram.com", root_url %>.</p>
+
+<p style="font-size: 1.1em; font-weight: bold;"> Message Details:</p>
+<p><b style="font-weight: bold; color: #666666;">From:</b> <%= "#{@message.name} <#{@message.email}>" %></p>
+<p><b style="font-weight: bold; color: #666666;">Message:</b><br />
+<%= raw @message.body.gsub(/\n/, '<br/>') %></p>
+<p><b style="font-weight: bold; color: #666666;">Sent on:</b> <%= @message.created_at.strftime("%d %B, %Y at %r") %></p>
