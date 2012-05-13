@@ -614,9 +614,9 @@ body.home #main_content #content #welcome_actions .action .caption .title {
   background: none repeat scroll 0 0 #FFFFFF;
 }
 
-#follow #follow_me_box img.buzz {
+#follow #follow_me_box img.plus {
   background: none repeat scroll 0 0 #FFFFFF;
-  padding: 7px 5px;
+  padding: 5px 0;
 }
 
 /* Login page */

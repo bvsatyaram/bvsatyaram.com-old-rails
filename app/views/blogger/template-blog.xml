@@ -434,6 +434,8 @@ h3.post-title, .comments h4 {
 
   line-height: 1.6;
   font-size: 90%;
+
+  text-align: left;
 }
 
 #comments .comment-author {
@@ -2081,7 +2083,7 @@ body.mobile .AdSense {
       <b:if cond='data:totalFollowerCount != &quot;&quot;'>
         <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
       </b:if>
-    </b:if>  
+    </b:if>
   </b:if>
   <div class='widget-content'>
     <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
@@ -2110,7 +2112,7 @@ body.mobile .AdSense {
               </a>
             </div>
           </b:if>
-  
+
           <div class='followers-grid'>
             <b:if cond='data:totalFollowerCount == 0'>
               <div class='profile-link item-control following-follow-this'>
@@ -2129,7 +2131,7 @@ body.mobile .AdSense {
             </b:loop>
             <div class='clear'/>
           </div>
-  
+
           <div class='followers-canvas profile-link'>
             <data:followersFooterMessage/>
             <span class='item-control following-not-admin'>
