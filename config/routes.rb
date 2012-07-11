@@ -18,6 +18,9 @@ Bvsatyaram::Application.routes.draw do
   resources :messages
   resources :users
 
+  # Pages Controller
+  get 'pages/evitca_koala'
+
   match 'resume' => 'resume#index'
 
   # The priority is based upon order of creation:
